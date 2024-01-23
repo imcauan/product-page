@@ -1,0 +1,9 @@
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
+READ-ME-template
+README
+style-guide
+node_modules
