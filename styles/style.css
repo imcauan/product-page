@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 @import "nav.css";
 @import "section.css";
+@import "product.css";
 
 * {
   margin: 0;
