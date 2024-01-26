@@ -1,0 +1,13 @@
+@import './variables/colors/colors.scss';
+@import './common/common.scss';
+@import 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap';
+@import './pages/nav.scss';
+@import './pages/product.scss';
+@import './pages/section.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
