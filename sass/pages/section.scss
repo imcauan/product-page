@@ -27,18 +27,18 @@
     }
 
     .nextImage {
-    border-radius: 50%;
-    padding: 1rem 1rem;
-    background-color: $white;
-    &:hover {
-      background-color: $black-75;
+      border-radius: 50%;
+      padding: 1rem 1rem;
+      background-color: $white;
+      &:hover {
+        background-color: $black-75;
+      }
+    }
+    .product-image img {
+      background-color: $white;
+      border-radius: 50%;
+      max-width: 100%;
+      padding: 1rem;
     }
   }
-    .product-image img {
-    background-color: $white;
-    border-radius: 50%;
-    max-width: 100%;
-    padding: 1rem;
-  }
-}
 }
