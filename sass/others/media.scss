@@ -1,0 +1,41 @@
+@media (min-width: 900px) {
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 3rem 0 0 0;
+
+    .product-image {
+      .imgBack {
+        max-width: 24rem;
+        border-radius: 15px;
+      }
+      .product-image-btns {
+        display: none;
+      }
+    }
+
+    .product-data {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .orderContainer {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .product-image {
+    margin: 0 0 0 5rem;
+  }
+
+  .product-data {
+    margin: 0 10rem 0 0;
+  }
+}

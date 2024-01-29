@@ -3,12 +3,62 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  gap: 1rem;
+
+  .product-image {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+
+    .imgBack {
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .product-image-btns {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      cursor: pointer;
+      transition: 0.3s ease;
+      padding: 1rem;
+
+      .previousImage {
+        border-radius: 50%;
+        padding: 1rem 1rem;
+        background-color: $white;
+        &:hover {
+          background-color: $black-75;
+        }
+      }
+
+      .nextImage {
+        border-radius: 50%;
+        padding: 1rem 1rem;
+        background-color: $white;
+        &:hover {
+          background-color: $black-75;
+        }
+      }
+
+      .product-image img {
+        background-color: $white;
+        border-radius: 50%;
+        max-width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
 
   .product-informations {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
 
     .product-company {
       text-transform: uppercase;
@@ -27,8 +77,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0 0 0;
-  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
 
   .discountContent {
     display: flex;
@@ -53,4 +103,48 @@
 .normalPrice {
   color: $dark-grayish-blue;
   text-decoration: line-through;
+}
+
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem;
+
+  .quantityBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: $light-grayish-blue;
+    border-radius: 10px;
+  }
+
+  #quantity {
+    font-family: "Kumbh Sans", sans-serif;
+  }
+
+  .minusBtn {
+    cursor: pointer;
+  }
+
+  .plusBtn {
+    cursor: pointer;
+  }
+}
+
+.buyBtnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: $orange;
+  width: 100%;
+  font-weight: 700;
+  color: $white;
+  border-radius: 10px;
+  cursor: pointer;
 }
