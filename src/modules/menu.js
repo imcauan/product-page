@@ -7,10 +7,12 @@ export function toggleMenu() {
     navMenuBtn.addEventListener("click", () => {
       navMenu.classList.add("active");
       navBarLeft.classList.add("unactive")
+      console.log(`Menu has been opened!`);
     })
     
     closeBtn.addEventListener("click", () => {
       navMenu.classList.remove("active");
       navBarLeft.classList.remove("unactive")
+      console.log(`Menu has been closed!`);
     });
   }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sneakers</title>
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   </head>
   <body>
     <div class="container">
@@ -30,12 +31,20 @@
         </div>
       </nav>
       <main class="product">
-
         <div class="product-image">
           <img src="./images/image-product-1.jpg" alt="" class="imgBack" />
+          <img src="./images/image-product-2.jpg" alt="" class="imgBack2" />
+          <img src="./images/image-product-3.jpg" alt="" class="imgBack3" />
+          <img src="./images/image-product-4.jpg" alt="" class="imgBack4" />
           <div class="product-image-btns">
             <img src="./images/icon-previous.svg" alt="" class="previousImage" />
             <img src="./images/icon-next.svg" alt="" class="nextImage" />
+          </div>
+          <div class="small-images-sliders">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="" class="imgClicker"/>
+            <img src="./images/image-product-2-thumbnail.jpg" alt="" class="imgClicker"/>
+            <img src="./images/image-product-3-thumbnail.jpg" alt="" class="imgClicker"/>
+            <img src="./images/image-product-4-thumbnail.jpg" alt="" class="imgClicker"/>
           </div>
         </div>
 
@@ -55,7 +64,7 @@
               <p class="normalPrice">$250,00</p>
             </div>
           </div>
-          
+
           <div class="orderContainer">
             <div class="quantityBtn">
               <img src="./images/icon-minus.svg" alt="" class="minusBtn" />
@@ -63,14 +72,13 @@
               <img src="./images/icon-plus.svg" alt="" class="plusBtn" />
             </div>
             <div class="buyBtnContainer">
-              <img src="./images/icon-cart.svg" alt="" class="cartBuy" />
+              <i class="bi bi-cart4"></i>
               <p class="AddToCart">Add to cart</p>
             </div>
           </div>
-
         </div>
       </main>
     </div>
-    <script type="module" src="./dist/index.js"></script>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>
